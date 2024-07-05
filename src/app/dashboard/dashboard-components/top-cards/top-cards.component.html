@@ -1,0 +1,70 @@
+<div class="container mt-4">
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <input type="datetime-local" class="form-control" [(ngModel)]="fromTimestamp" placeholder="From Timestamp">
+      </div>
+      <div class="col-md-4">
+        <input type="datetime-local" class="form-control" [(ngModel)]="toTimestamp" placeholder="To Timestamp">
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-primary" (click)="fetchAndProcessData()">Fetch Data</button>
+      </div>
+    </div>
+  
+    <!-- Total Transactions and Total Anomalies cards -->
+    <div class="row mb-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div class="ms-3">
+                <h3 class="mb-0 font-weight-bold">{{totalTransactions.title}}</h3>
+                <h1 class="text-muted fs-3">{{totalTransactions.subtitle}}</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div class="ms-3">
+                <h3 class="mb-0 font-weight-bold">{{totalAnomalies.title}}</h3>
+                <h1 class="text-muted fs-3">{{totalAnomalies.subtitle}}</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Other Services cards -->
+    <div class="row">
+      <div class="col-md-6 col-lg-3" *ngFor="let service of otherServices">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div class="ms-3">
+                <h3 class="mb-0 font-weight-bold">{{service.title}}</h3>
+                <h1 class="text-muted fs-3">{{service.subtitle}}</h1>
+                <p *ngIf="service.additionalInfo" class="mt-2">{{service.additionalInfo}}</p>
+  
+                <!-- Dropdown for accounts -->
+                <div *ngIf="service.accounts && service.accounts.length > 0" class="dropdown mt-2">
+                  <button class="btn btn-secondary dropdown-toggle blue" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Show Accounts
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" *ngFor="let account of service.accounts">{{ account }}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,42 @@
+#combined-bar-graph {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+  }
+  
+  .bar-transactions {
+    fill: #8dd3c7; /* Pastel blue */
+  }
+  
+  .bar-success {
+    fill: #fb8072; /* Pastel red */
+  }
+  
+  .axis text {
+    font-size: 12px;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+  }
+  
+  .legend {
+    font-size: 12px;
+  }
+  
+  .legend rect {
+    stroke-width: 2;
+  }
+  
+  .legend text {
+    fill: #000;
+    font-size: 12px;
+    dominant-baseline: middle;
+  }
+  
+  .legend-label {
+    font-size: 12px;
+    text-anchor: start;
+  }
+  
