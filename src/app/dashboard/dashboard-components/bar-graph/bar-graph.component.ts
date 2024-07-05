@@ -114,13 +114,13 @@ export class BarGraphComponent implements OnInit {
       .attr('class', 'legend-label');
 
     legend.append('rect')
-      .attr('x', 50)
+      .attr('x', 60)
       .attr('width', 10)
       .attr('height', 10)
       .attr('fill', '#fb8072'); // Pastel red
 
     legend.append('text')
-      .attr('x', 65)
+      .attr('x', 75)
       .attr('y', 5)
       .attr('dy', '0.35em')
       .text('Successes')
