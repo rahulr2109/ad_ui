@@ -13,7 +13,7 @@ import { BubbleChartModule } from "./dashboard-components/bubble-chart/bubble-ch
 import { BarGraphComponent } from "./dashboard-components/bar-graph/bar-graph.component";
 import { BarGraphModule } from "./dashboard-components/bar-graph/bar-graph.module";
 import { LineChartModule } from "./dashboard-components/line-chart/line-chart.module";
-
+import { HttpClientModule } from "@angular/common/http";
 const routes: Routes = [
   {
     path: "",
@@ -34,7 +34,8 @@ const routes: Routes = [
     NgApexchartsModule,
     BubbleChartModule,
     BarGraphModule,
-    LineChartModule
+    LineChartModule,
+    HttpClientModule,
   ],
   declarations: [
     DashboardComponent,
