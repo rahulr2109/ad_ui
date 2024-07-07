@@ -1,0 +1,54 @@
+{
+    "data": [
+      {
+        "date": "2024-06-28",
+        "limitSvc": 1458,
+        "balanceCore": 2007,
+        "liquidityPaymentIntegration": 300,
+        "liquidityCheck": 400
+      },
+      {
+        "date": "2024-06-29",
+        "limitSvc": 361,
+        "balanceCore": 1114,
+        "liquidityPaymentIntegration": 2461,
+        "liquidityCheck": 4331
+      },
+      {
+        "date": "2024-06-30",
+        "limitSvc": 490,
+        "balanceCore": 392,
+        "liquidityPaymentIntegration": 310,
+        "liquidityCheck": 540
+      },
+      {
+        "date": "2024-07-01",
+        "limitSvc": 758,
+        "balanceCore": 4512,
+        "liquidityPaymentIntegration": 2118,
+        "liquidityCheck": 728
+      },
+      {
+        "date": "2024-07-02",
+        "limitSvc": 351,
+        "balanceCore": 323,
+        "liquidityPaymentIntegration": 290,
+        "liquidityCheck": 351
+      },
+      {
+        "date": "2024-07-03",
+        "limitSvc": 402,
+        "balanceCore": 345,
+        "liquidityPaymentIntegration": 722,
+        "liquidityCheck": 42
+      },
+      {
+        "date": "2024-07-04",
+        "limitSvc": 1409,
+        "balanceCore": 520,
+        "liquidityPaymentIntegration": 109,
+        "liquidityCheck": 109
+      }
+    ]
+  }
+  

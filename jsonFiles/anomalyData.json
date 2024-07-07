@@ -1,0 +1,169 @@
+{
+    "data": [
+      {
+        "date": "2024-06-28",
+        "hour": 0,
+        "anomalyCount": 5,
+        "anomalies": [
+          {
+            "accountId": "acc123",
+            "type": "type1"
+          },
+          {
+            "accountId": "acc456",
+            "type": "type2"
+          },
+          {
+            "accountId": "acc789",
+            "type": "type1"
+          },
+          {
+            "accountId": "acc101",
+            "type": "type3"
+          },
+          {
+            "accountId": "acc202",
+            "type": "type2"
+          }
+        ]
+      },
+      {
+        "date": "2024-06-28",
+        "hour": 13,
+        "anomalyCount": 2,
+        "anomalies": [
+          {
+            "accountId": "acc303",
+            "type": "type1"
+          },
+          {
+            "accountId": "acc404",
+            "type": "type2"
+          }
+        ]
+      },
+      {
+        "date": "2024-06-29",
+        "hour": 0,
+        "anomalyCount": 1,
+        "anomalies": [
+          {
+            "accountId": "acc505",
+            "type": "type3"
+          }
+        ]
+      },
+      {
+        "date": "2024-06-30",
+        "hour": 0,
+        "anomalyCount": 3,
+        "anomalies": [
+          {
+            "accountId": "acc606",
+            "type": "type1"
+          },
+          {
+            "accountId": "acc707",
+            "type": "type2"
+          },
+          {
+            "accountId": "acc808",
+            "type": "type3"
+          }
+        ]
+      },
+      {
+        "date": "2024-07-01",
+        "hour": 0,
+        "anomalyCount": 4,
+        "anomalies": [
+          {
+            "accountId": "acc909",
+            "type": "type1"
+          },
+          {
+            "accountId": "acc1010",
+            "type": "type2"
+          },
+          {
+            "accountId": "acc1111",
+            "type": "type1"
+          },
+          {
+            "accountId": "acc1212",
+            "type": "type3"
+          }
+        ]
+      },
+      {
+        "date": "2024-07-02",
+        "hour": 15,
+        "anomalyCount": 7,
+        "anomalies": [
+          {
+            "accountId": "acc1313",
+            "type": "type1"
+          },
+          {
+            "accountId": "acc1414",
+            "type": "type2"
+          },
+          {
+            "accountId": "acc1515",
+            "type": "type3"
+          },
+          {
+            "accountId": "acc1616",
+            "type": "type1"
+          },
+          {
+            "accountId": "acc1717",
+            "type": "type2"
+          },
+          {
+            "accountId": "acc1818",
+            "type": "type3"
+          },
+          {
+            "accountId": "acc1919",
+            "type": "type1"
+          }
+        ]
+      },
+      {
+        "date": "2024-07-03",
+        "hour": 20,
+        "anomalyCount": 3,
+        "anomalies": [
+          {
+            "accountId": "acc2020",
+            "type": "type1"
+          },
+          {
+            "accountId": "acc2121",
+            "type": "type2"
+          },
+          {
+            "accountId": "acc2222",
+            "type": "type3"
+          }
+        ]
+      },
+      {
+        "date": "2024-07-04",
+        "hour": 17,
+        "anomalyCount": 2,
+        "anomalies": [
+          {
+            "accountId": "acc2323",
+            "type": "type1"
+          },
+          {
+            "accountId": "acc2424",
+            "type": "type2"
+          }
+        ]
+      }
+    ]
+  }
+  

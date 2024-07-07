@@ -14,6 +14,7 @@ import { BarGraphComponent } from "./dashboard-components/bar-graph/bar-graph.co
 import { BarGraphModule } from "./dashboard-components/bar-graph/bar-graph.module";
 import { LineChartModule } from "./dashboard-components/line-chart/line-chart.module";
 import { HttpClientModule } from "@angular/common/http";
+import { CurrentDayAnomaliesModule } from "../current-day-anomalies/current-day-anomalies.module";
 const routes: Routes = [
   {
     path: "",
@@ -36,6 +37,7 @@ const routes: Routes = [
     BarGraphModule,
     LineChartModule,
     HttpClientModule,
+    CurrentDayAnomaliesModule
   ],
   declarations: [
     DashboardComponent,

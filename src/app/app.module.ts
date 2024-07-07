@@ -21,6 +21,7 @@ import { Approutes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SpinnerComponent } from './shared/spinner.component';
 import { LineChartModule } from './dashboard/dashboard-components/line-chart/line-chart.module';
+import { CurrentDayAnomaliesModule } from './current-day-anomalies/current-day-anomalies.module';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { LineChartModule } from './dashboard/dashboard-components/line-chart/lin
     FullComponent,
     NavigationComponent,
     SidebarComponent,
-    LineChartModule
+    LineChartModule,
+    CurrentDayAnomaliesModule
   ],
   providers: [
     {

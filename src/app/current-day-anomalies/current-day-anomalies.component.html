@@ -1,0 +1,48 @@
+<p>current-day-anomalies works!</p>
+<!-- current-day-anomalies.component.html -->
+
+<div class="anomaly-dashboard">
+    <h2>Anomaly Detection Dashboard - Current Day</h2>
+  
+    <!-- Hourly boxes -->
+    <div *ngFor="let data of anomalyData; let i = index" class="hourly-box"
+         [ngStyle]="{'background-color': hourColors[i]}">
+  
+      <!-- Box content -->
+      <div class="hourly-box-inner"
+           *ngIf="(hourColors[i] !== 'blue') && (hourColors[i] !== 'gray')"
+           [ngClass]="{'hoverable': hasAnomaly(data.hour)}"
+           (mouseenter)="onMouseEnter(i)"
+           (mouseleave)="onMouseLeave()">
+  
+        <!-- Hour and Anomaly Count -->
+        <p class="hour-info">Hour: {{ data.hour }}</p>
+        <p class="anomaly-count" *ngIf="hasAnomaly(data.hour)">
+          <!--Anomaly Count: {{ data.anomalyCount }}-->
+        </p>
+        <ul class="anomaly-details" *ngIf="hasAnomaly(data.hour)">
+          <li *ngFor="let anomaly of data.anomalies">
+            <!--Account ID: {{ anomaly.accountId }}, Type: {{ anomaly.type }}-->
+          </li>
+        </ul>
+  
+        <!-- Additional Data (to display on hover) -->
+        <div class="additional-data" *ngIf="hoveredIndex === i && showHoverContent">
+          <p>Hour: {{ data.hour }}</p>
+          <p>Anomaly Count: {{ data.anomalyCount }}</p>
+          <ul class="anomaly-details">
+            <li *ngFor="let anomaly of data.anomalies">
+              Account ID: {{ anomaly.accountId }}, Type: {{ anomaly.type }}
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Hour text below each box 
+      <p class="hour-text" *ngIf="(hourColors[i] !== 'blue') && (hourColors[i] !== 'gray')">Hour: {{ data.hour }}</p>
+    </div>-->
+  
+    <!-- Loading message -->
+    <p class="loading-message" *ngIf="anomalyData.length === 0">Loading anomaly data...</p>
+  </div>
+  
